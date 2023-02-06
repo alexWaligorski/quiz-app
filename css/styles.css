@@ -1,3 +1,18 @@
 * {
-  background-color: red;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: thistle;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  color: darkslategray;
 }
