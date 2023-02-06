@@ -42,7 +42,7 @@ header {
   margin-bottom: 2em;
 }
 
-.bookmark {
+.bookmark-filled {
   height: 40px;
   width: 40px;
   position: absolute;
@@ -50,6 +50,16 @@ header {
   right: 20px;
   border: 1px solid black;
   background-color: black;
+}
+
+.bookmark-empty {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  border: 1px solid black;
+  background-color: white;
 }
 
 .question {
