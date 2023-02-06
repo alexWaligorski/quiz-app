@@ -9,10 +9,34 @@ body {
 }
 
 header {
-  background-color: thistle;
+  background-color: burlywood;
   width: 100%;
   position: fixed;
   top: 0;
   text-align: center;
-  color: darkslategray;
+  color: black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
+  color: white;
+  width: 100%;
+}
+
+.footer-menue {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.footer-item {
+  font-size: 20px;
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  text-align: center;
 }
