@@ -12,8 +12,8 @@
       <h1>Quiz App</h1>
     </header>
     <main class="question-container">
-      <article class="question-card">
-        <div class="question-card__question">
+      <article class="card">
+        <div class="card__question">
           <img
             class="bookmark--selected"
             src="./images/bookmark-black.png"
@@ -21,36 +21,12 @@
           />
           <p>What property flips the axes in flexbox?</p>
         </div>
-        <div class="question-card__answer">
+        <div class="card__answer">
           <p>flex-direction</p>
         </div>
         <div>
-          <div>
-            <button
-              class="question-card__answer-button"
-              type="button"
-              aria-tag="click to show answer"
-            >
-              Show Answer
-            </button>
-          </div>
-        </div>
-      </article>
-      <article class="question-card">
-        <div class="question-card__question">
-          <img
-            class="bookmark--disabled"
-            src="./images/bookmark-big.png"
-            alt="disabled bookmark icon"
-          />
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
-        </div>
-        <div class="question-card__answer">
-          <p>Lorem Ipsum</p>
-        </div>
-        <div>
           <button
-            class="question-card__answer-button"
+            class="card__answer-button"
             type="button"
             aria-tag="click to show answer"
           >
@@ -58,21 +34,43 @@
           </button>
         </div>
       </article>
-      <article class="question-card">
-        <img
-          class="bookmark--selected"
-          src="./images/bookmark-black.png"
-          alt="active bookmark icon"
-        />
-        <div class="question-card__question">
+      <article class="card">
+        <div class="card__question">
+          <img
+            class="bookmark--disabled"
+            src="./images/bookmark-big.png"
+            alt="disabled bookmark icon"
+          />
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
         </div>
-        <div class="question-card__answer">
+        <div class="card__answer">
           <p>Lorem Ipsum</p>
         </div>
         <div>
           <button
-            class="question-card__answer-button"
+            class="card__answer-button"
+            type="button"
+            aria-tag="click to show answer"
+          >
+            Show Answer
+          </button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__question">
+          <img
+            class="bookmark--selected"
+            src="./images/bookmark-black.png"
+            alt="active bookmark icon"
+          />
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
+        </div>
+        <div class="card__answer">
+          <p>Lorem Ipsum</p>
+        </div>
+        <div>
+          <button
+            class="card__answer-button"
             type="button"
             aria-tag="click to show answer"
           >
@@ -85,7 +83,7 @@
     <!--   To Do : footer img alignment needs to be fixed -->
 
     <footer>
-      <nav>
+      <nav class="navigation">
         <ul class="footer-menue">
           <li class="footer-item">
             <a class="footer-item__anchor" href=""
