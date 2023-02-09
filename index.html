@@ -13,17 +13,21 @@
     </header>
     <main class="question-container">
       <article class="question-card">
-        <div class="question">
-          <div class="bookmark-filled"></div>
+        <div class="question-card__question">
+          <img
+            class="bookmark--selected"
+            src="./images/bookmark-black.png"
+            alt="active bookmark icon"
+          />
           <p>What property flips the axes in flexbox?</p>
         </div>
-        <div class="answer">
+        <div class="question-card__answer">
           <p>flex-direction</p>
         </div>
         <div>
           <div>
             <button
-              class="answer-button"
+              class="question-card__answer-button"
               type="button"
               aria-tag="click to show answer"
             >
@@ -33,16 +37,20 @@
         </div>
       </article>
       <article class="question-card">
-        <div class="question">
-          <div class="bookmark-empty"></div>
+        <div class="question-card__question">
+          <img
+            class="bookmark--disabled"
+            src="./images/bookmark-big.png"
+            alt="disabled bookmark icon"
+          />
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
         </div>
-        <div class="answer">
+        <div class="question-card__answer">
           <p>Lorem Ipsum</p>
         </div>
         <div>
           <button
-            class="answer-button"
+            class="question-card__answer-button"
             type="button"
             aria-tag="click to show answer"
           >
@@ -51,16 +59,20 @@
         </div>
       </article>
       <article class="question-card">
-        <div class="bookmark-filled"></div>
-        <div class="question">
+        <img
+          class="bookmark--selected"
+          src="./images/bookmark-black.png"
+          alt="active bookmark icon"
+        />
+        <div class="question-card__question">
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
         </div>
-        <div class="answer">
+        <div class="question-card__answer">
           <p>Lorem Ipsum</p>
         </div>
         <div>
           <button
-            class="answer-button"
+            class="question-card__answer-button"
             type="button"
             aria-tag="click to show answer"
           >
@@ -69,14 +81,36 @@
         </div>
       </article>
     </main>
+
+    <!--   To Do : footer img alignment needs to be fixed -->
+
     <footer>
       <nav>
         <ul class="footer-menue">
           <li class="footer-item">
-            <a href=""><img src="images/home.png" /></a>
+            <a class="footer-item__anchor" href=""
+              ><img
+                class="footer-item__image"
+                src="images/home-big.png"
+                alt="house icon"
+            /></a>
           </li>
-          <li class="footer-item"><a href="">☆</a></li>
-          <li class="footer-item"><a href="">👤</a></li>
+          <li class="footer-item">
+            <a class="footer-item__anchor" href=""
+              ><img
+                class="footer-item_image"
+                src="images/bookmark-big.png"
+                alt="bookmark-icon"
+            /></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item__anchor" href=""
+              ><img
+                class="footer-item__image"
+                src="images/profile-big.png"
+                alt="profile icon"
+            /></a>
+          </li>
         </ul>
       </nav>
     </footer>
