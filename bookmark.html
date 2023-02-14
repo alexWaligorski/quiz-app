@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Quiz-App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main class="question-container">
+      <article class="card">
+        <div class="card__question">
+          <img
+            class="bookmark"
+            src="./images/bookmark.svg"
+            alt="active bookmark icon"
+          />
+          <p>What property flips the axes in flexbox?</p>
+        </div>
+        <div class="card__answer">
+          <p>flex-direction</p>
+        </div>
+        <div>
+          <button
+            class="card__answer-button"
+            type="button"
+            aria-tag="click to show answer"
+          >
+            Show Answer
+          </button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__question">
+          <img
+            class="bookmark"
+            src="./images/bookmark.svg"
+            alt="disabled bookmark icon"
+          />
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
+        </div>
+        <div class="card__answer">
+          <p>Lorem Ipsum</p>
+        </div>
+        <div>
+          <button
+            class="card__answer-button"
+            type="button"
+            aria-tag="click to show answer"
+          >
+            Show Answer
+          </button>
+        </div>
+      </article>
+      <article class="card">
+        <div class="card__question">
+          <img
+            class="bookmark bookmark--selected"
+            src="./images/bookmark.svg"
+            alt="active bookmark icon"
+          />
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
+        </div>
+        <div class="card__answer">
+          <p>Lorem Ipsum</p>
+        </div>
+        <div>
+          <button
+            class="card__answer-button"
+            type="button"
+            aria-tag="click to show answer"
+          >
+            Show Answer
+          </button>
+        </div>
+      </article>
+    </main>
+
+    <!--   To Do : footer img alignment needs to be fixed -->
+
+    <footer>
+      <nav class="navigation">
+        <ul class="footer-menue">
+          <li class="footer-item">
+            <a class="footer-item__anchor" href=""
+              ><img
+                class="footer-item__image"
+                src="images/home.svg"
+                alt="house icon"
+            /></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item__anchor" href=""
+              ><img
+                class="footer-item__image"
+                src="images/bookmark.svg"
+                alt="bookmark-icon"
+            /></a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-item__anchor" href=""
+              ><img
+                class="footer-item__image"
+                src="images/user--avatar.svg"
+                alt="profile icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
