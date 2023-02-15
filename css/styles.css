@@ -20,6 +20,8 @@ header {
   z-index: 1;
 }
 
+/* Question-Section */
+
 .question-container {
   display: flex;
   flex-direction: column;
@@ -74,6 +76,24 @@ header {
   border-radius: 4px;
 }
 
+.card__tag-container {
+  width: 100%;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.card__tag {
+  font-size: 10px;
+  margin: 0.25;
+  border: 1px solid black;
+  margin-right: 0.25em;
+  padding: 0.25em;
+  border-radius: 4px;
+  background-color: lightgrey;
+}
+
+/* Footer-Section */
+
 footer {
   position: fixed;
   bottom: 0;
@@ -89,6 +109,11 @@ footer {
   padding-top: 0.5em;
 }
 
+.footer-item--selected {
+  background-color: lightgrey;
+  border-radius: 4px;
+}
+
 .footer-menue {
   display: flex;
   justify-content: center;
@@ -101,7 +126,9 @@ footer {
 }
 
 .footer-item__anchor {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 50px;
   min-width: 50px;
 }
@@ -109,4 +136,118 @@ footer {
 .footer-item__image {
   height: 40px;
   width: auto;
+}
+
+/* Profile-Page */
+
+.profile-container {
+  margin: 70px 10% 60px;
+}
+
+.personal-info__header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.personal-info__picture {
+  height: 100px;
+  width: auto;
+}
+
+.counter-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.counter-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.5em;
+}
+
+.counter-box__symbol {
+  position: relative;
+  border: 1px solid black;
+  padding: 0.25em;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+}
+
+.counter-box__number {
+  padding: 0.25em;
+}
+
+.counter-box__image {
+  padding: 0.25em;
+  height: 35px;
+}
+
+.dark-mode {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* The switch - the box around the slider */
+.dark-mode__switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.dark-mode__switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.dark-mode__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.dark-mode__slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .dark-mode__slider {
+  background-color: rgb(95, 94, 94);
+}
+
+input:focus + .dark-mode__slider {
+  box-shadow: 0 0 2px black;
+}
+
+input:checked + .dark-mode__slider:before {
+  transform: translateX(26px);
 }

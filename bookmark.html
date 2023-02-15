@@ -15,50 +15,6 @@
       <article class="card">
         <div class="card__question">
           <img
-            class="bookmark"
-            src="./images/bookmark.svg"
-            alt="active bookmark icon"
-          />
-          <p>What property flips the axes in flexbox?</p>
-        </div>
-        <div class="card__answer">
-          <p>flex-direction</p>
-        </div>
-        <div>
-          <button
-            class="card__answer-button"
-            type="button"
-            aria-tag="click to show answer"
-          >
-            Show Answer
-          </button>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__question">
-          <img
-            class="bookmark"
-            src="./images/bookmark.svg"
-            alt="disabled bookmark icon"
-          />
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
-        </div>
-        <div class="card__answer">
-          <p>Lorem Ipsum</p>
-        </div>
-        <div>
-          <button
-            class="card__answer-button"
-            type="button"
-            aria-tag="click to show answer"
-          >
-            Show Answer
-          </button>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__question">
-          <img
             class="bookmark bookmark--selected"
             src="./images/bookmark.svg"
             alt="active bookmark icon"
@@ -79,22 +35,25 @@
         </div>
       </article>
     </main>
-
-    <!--   To Do : footer img alignment needs to be fixed -->
-
     <footer>
       <nav class="navigation">
         <ul class="footer-menue">
           <li class="footer-item">
-            <a class="footer-item__anchor" href=""
+            <a
+              class="footer-item__anchor"
+              href="index.html"
+              aria-label="click to go to homescreen"
               ><img
                 class="footer-item__image"
                 src="images/home.svg"
                 alt="house icon"
             /></a>
           </li>
-          <li class="footer-item">
-            <a class="footer-item__anchor" href=""
+          <li class="footer-item footer-item--selected">
+            <a
+              class="footer-item__anchor"
+              href="bookmark.html"
+              aria-label="click to go to bookmark-page"
               ><img
                 class="footer-item__image"
                 src="images/bookmark.svg"
@@ -102,7 +61,10 @@
             /></a>
           </li>
           <li class="footer-item">
-            <a class="footer-item__anchor" href=""
+            <a
+              class="footer-item__anchor"
+              href="profile.html"
+              aria-label="click to go to profile"
               ><img
                 class="footer-item__image"
                 src="images/user--avatar.svg"
