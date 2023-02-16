@@ -5,38 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="./js/form.js" defer></script>
     <title>Quiz-App</title>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
-    <main class="question-container">
-      <article class="card">
-        <div class="card__question">
-          <button class="bookmark-button" aria-label="button" type="button">
-            <img
-              class="bookmark"
-              src="./images/bookmark.svg"
-              alt=" disabled bookmark icon"
-            />
-          </button>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
-        </div>
-        <div class="card__answer">
-          <p>Lorem Ipsum</p>
-        </div>
-        <div>
-          <button
-            class="card__answer-button"
-            type="button"
-            aria-tag="click to show answer"
-          >
-            Show Answer
-          </button>
-        </div>
-      </article>
+    <main class="question-container" data-js="question-container">
+      <form class="form" aria-labelledby="form-title" data-js="form">
+        <h2 id="form-title">Add a new Question</h2>
+        <label for="newQuestion">Question:</label>
+        <textarea
+          name="newQuestion"
+          id="newQuestion"
+          rows="5"
+          maxlength="150"
+        ></textarea>
+        <span class="text-counter" data-js="text-counter1"
+          >150 characters left</span
+        >
+        <label for="newAnswer">Answer:</label>
+        <textarea
+          name="newAnswer"
+          id="newAnswer"
+          rows="5"
+          maxlength="150"
+        ></textarea>
+        <span class="text-counter" data-js="text-counter2"
+          >150 characters left</span
+        >
+        <label for="newTags">Tags:</label>
+        <input name="newTags" id="newTags" type="text" />
+        <button
+          type="submit"
+          data-js="submit-question-button"
+          aria-label="Submit new question"
+        >
+          Submit
+        </button>
+      </form>
     </main>
     <footer>
       <nav class="navigation">
@@ -52,7 +60,7 @@
                 alt="house icon"
             /></a>
           </li>
-          <li class="footer-item footer-item--selected">
+          <li class="footer-item">
             <a
               class="footer-item__anchor"
               href="bookmark.html"
@@ -63,7 +71,7 @@
                 alt="bookmark-icon"
             /></a>
           </li>
-          <li class="footer-item">
+          <li class="footer-item footer-item--selected">
             <a
               class="footer-item__anchor"
               href="form.html"
