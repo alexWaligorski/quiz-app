@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Quiz-App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main class="profile-container">
+      <article class="personal-info">
+        <section class="personal-info__header">
+          <img
+            class="personal-info__picture"
+            src="images/user--avatar.svg"
+            alt="user profile pic"
+          />
+          <h2 class="personal-info__username">Jane Doe</h2>
+        </section>
+        <section class="personal-info__text">
+          <h3>About me:</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            distinctio velit voluptates, illum magnam hic sapiente architecto
+            sint deserunt? Praesentium obcaecati at, repudiandae sint vel eos
+            pariatur consequatur nemo placeat.
+          </p>
+        </section>
+        <section class="counter-section">
+          <div class="counter-box">
+            <img
+              class="counter-box__filled"
+              src="images/help--filled.svg"
+              alt="questionmark icon"
+            />
+            <div class="counter-box__number">12</div>
+          </div>
+          <div class="counter-box">
+            <img
+              class="counter-box__image"
+              src="images/bookmark.svg"
+              alt="bookmark icon"
+            />
+            <div class="counter-box__number">5</div>
+          </div>
+        </section>
+        <section class="settings">
+          <h3>Settings:</h3>
+          <div class="dark-mode">
+            <h4 class="setting-label">Dark Mode</h4>
+            <label
+              class="dark-mode__switch"
+              aria-label="click change color mode"
+            >
+              <input type="checkbox" />
+              <span class="dark-mode__slider round"></span>
+            </label>
+          </div>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <nav class="navigation">
+        <ul class="footer-menue">
+          <li class="footer-item">
+            <a
+              class="footer-item__anchor"
+              href="index.html"
+              aria-label="click to go to homescreen"
+              ><img
+                class="footer-item__image"
+                src="images/home.svg"
+                alt="house icon"
+            /></a>
+          </li>
+          <li class="footer-item">
+            <a
+              class="footer-item__anchor"
+              href="bookmark.html"
+              aria-label="click to go to bookmar-page"
+              ><img
+                class="footer-item__image"
+                src="images/bookmark.svg"
+                alt="bookmark-icon"
+            /></a>
+          </li>
+          <li class="footer-item footer-item--selected">
+            <a
+              class="footer-item__anchor"
+              href="profile.html"
+              aria-label="click to go to profile"
+              ><img
+                class="footer-item__image"
+                src="images/user--avatar.svg"
+                alt="profile icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
