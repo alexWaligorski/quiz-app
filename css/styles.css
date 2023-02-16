@@ -45,14 +45,16 @@ header {
 }
 
 .card__question {
+  padding-top: 2em;
+}
+
+.card__answer {
   padding-left: 2em;
   padding-right: 2em;
 }
 
-.card__answer {
+.card__answer--hidden {
   visibility: hidden;
-  padding-left: 2em;
-  padding-right: 2em;
 }
 
 .card__answer-button {
@@ -62,16 +64,17 @@ header {
   border-radius: 5px;
 }
 
-.bookmark {
-  height: 50px;
-  width: 50px;
+.bookmark-button {
+  height: 60px;
+  width: 60px;
   position: absolute;
   top: -20px;
   right: 20px;
   background-color: white;
+  border-style: none;
 }
 
-.bookmark--selected {
+.bookmark-button--selected {
   background-color: rgb(231, 70, 70);
   border-radius: 4px;
 }

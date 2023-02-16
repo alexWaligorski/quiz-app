@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>Quiz-App</title>
   </head>
   <body>
@@ -14,14 +15,21 @@
     <main class="question-container">
       <article class="card">
         <div class="card__question">
-          <img
-            class="bookmark"
-            src="./images/bookmark.svg"
-            alt="active bookmark icon"
-          />
+          <button
+            class="bookmark-button"
+            aria-label="button"
+            type="button"
+            data-js="bookmark-button"
+          >
+            <img
+              class="bookmark"
+              src="./images/bookmark.svg"
+              alt=" disabled bookmark icon"
+            />
+          </button>
           <p>What property flips the axes in flexbox?</p>
         </div>
-        <div class="card__answer">
+        <div class="card__answer card__answer--hidden" data-js="answer-text">
           <p>flex-direction</p>
         </div>
         <div>
@@ -29,6 +37,7 @@
             class="card__answer-button"
             type="button"
             aria-tag="click to show answer"
+            data-js="answer-button"
           >
             Show Answer
           </button>
@@ -40,14 +49,16 @@
       </article>
       <article class="card">
         <div class="card__question">
-          <img
-            class="bookmark"
-            src="./images/bookmark.svg"
-            alt="disabled bookmark icon"
-          />
+          <button class="bookmark-button" aria-label="button" type="button">
+            <img
+              class="bookmark"
+              src="./images/bookmark.svg"
+              alt=" disabled bookmark icon"
+            />
+          </button>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
         </div>
-        <div class="card__answer">
+        <div class="card__answer card__answer--hidden">
           <p>Lorem Ipsum</p>
         </div>
         <div>
@@ -67,14 +78,16 @@
       </article>
       <article class="card">
         <div class="card__question">
-          <img
-            class="bookmark bookmark--selected"
-            src="./images/bookmark.svg"
-            alt="active bookmark icon"
-          />
+          <button class="bookmark-button" aria-label="button" type="button">
+            <img
+              class="bookmark"
+              src="./images/bookmark.svg"
+              alt=" disabled bookmark icon"
+            />
+          </button>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit?</p>
         </div>
-        <div class="card__answer">
+        <div class="card__answer card__answer--hidden">
           <p>Lorem Ipsum</p>
         </div>
         <div>
