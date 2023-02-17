@@ -38,7 +38,7 @@ header {
   text-align: center;
   position: relative;
   width: 70%;
-  border: 2px solid black;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 1em;
   margin-bottom: 2em;
@@ -253,4 +253,23 @@ input:focus + .dark-mode__slider {
 
 input:checked + .dark-mode__slider:before {
   transform: translateX(26px);
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 1px solid black;
+  padding: 2em;
+  margin-bottom: 2em;
+  width: 70%;
+  border-radius: 4px;
+}
+
+.text-counter {
+  text-align: right;
+  color: darkgrey;
+  font-size: 12px;
 }
