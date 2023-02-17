@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
 const formContainer = document.querySelector('[data-js="question-container"]');
+const questionInput = document.querySelector('[data-js="newQuestion"]');
+const answerInput = document.querySelector('[data-js="newAnswer"]');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -7,6 +9,7 @@ form.addEventListener("submit", (event) => {
   const data = Object.fromEntries(formData);
   console.log(data);
   addNewQuestion(data);
+  event.target.newQuestion.focus();
   event.target.reset();
 });
 
@@ -44,4 +47,24 @@ function addNewQuestion(data) {
   </div> `;
 
   formContainer.append(quizCard);
+}
+
+questionInput.addEventListener("input", (event) => {
+  calculateTextlenght(event.target);
+});
+
+answerInput.addEventListener("input", (event) => {
+  calculateTextlenght(event.target);
+});
+
+function calculateTextlenght(text) {
+  const questionCounter = document.querySelector('[data-js="text-counter1"]');
+  const answerCounter = document.querySelector('[data-js="text-counter2"]');
+  const remainingCharacters = 150 - text.value.length;
+
+  if (text.name === "newQuestion") {
+    questionCounter.textContent = `${remainingCharacters} characters left`;
+  } else if (text.name === "newAnswer") {
+    answerCounter.textContent = `${remainingCharacters} characters left`;
+  }
 }
