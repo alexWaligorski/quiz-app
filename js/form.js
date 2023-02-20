@@ -2,6 +2,8 @@ const form = document.querySelector("form");
 const formContainer = document.querySelector('[data-js="question-container"]');
 const questionInput = document.querySelector('[data-js="newQuestion"]');
 const answerInput = document.querySelector('[data-js="newAnswer"]');
+const questionCounter = document.querySelector('[data-js="text-counter1"]');
+const answerCounter = document.querySelector('[data-js="text-counter2"]');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -11,6 +13,8 @@ form.addEventListener("submit", (event) => {
   addNewQuestion(data);
   event.target.newQuestion.focus();
   event.target.reset();
+  questionCounter.textContent = "150 characters left";
+  answerCounter.textContent = "150 characters left";
 });
 
 function addNewQuestion(data) {
@@ -58,8 +62,6 @@ answerInput.addEventListener("input", (event) => {
 });
 
 function calculateTextlenght(text) {
-  const questionCounter = document.querySelector('[data-js="text-counter1"]');
-  const answerCounter = document.querySelector('[data-js="text-counter2"]');
   const remainingCharacters = 150 - text.value.length;
 
   if (text.name === "newQuestion") {
